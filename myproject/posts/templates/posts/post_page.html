@@ -6,11 +6,16 @@
 
 {% block content %}
     <section>
+        <img 
+            class="banner"
+            src="{{ post.banner.url }}"
+            alt="Banner for {{ post.title }}"
+        />
         <h1>{{ post.title }}</h1>
         <p>{{ post.body }}</p>
         <p>Published on {{ post.date }}</p>
     </section>
-    {% endblock %}
+{% endblock %}
 
     
        
